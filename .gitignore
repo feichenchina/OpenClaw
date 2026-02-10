@@ -1,3 +1,14 @@
+# OpenClaw 特定忽略项
+config.yml
+config.yaml      # 这是最重要的，包含所有API密钥，绝对不能上传！
+*.db             # 忽略可能的本地数据库文件
+cache/           # 忽略缓存目录
+logs/            # 忽略日志目录
+.env             # 忽略环境变量文件（如果使用）
+*.key            # 其他可能的密钥文件
+*.pem
+secrets/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
