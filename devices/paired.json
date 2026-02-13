@@ -1,0 +1,95 @@
+{
+  "e9a40260d9d6d5a3e3831d5722c4b9529293c5a49efdb88c784a1083a70cb45b": {
+    "deviceId": "e9a40260d9d6d5a3e3831d5722c4b9529293c5a49efdb88c784a1083a70cb45b",
+    "publicKey": "nc0-Lt91cFQk-tb_eI4jgBaHhu9EqXGfwkj2fzgFEiY",
+    "platform": "linux",
+    "clientId": "cli",
+    "clientMode": "cli",
+    "role": "operator",
+    "roles": [
+      "operator",
+      "node"
+    ],
+    "scopes": [
+      "operator.admin",
+      "operator.approvals",
+      "operator.pairing"
+    ],
+    "tokens": {
+      "operator": {
+        "token": "65c4e0247cd24e89a880ab622d30dedf",
+        "role": "operator",
+        "scopes": [
+          "operator.admin",
+          "operator.approvals",
+          "operator.pairing"
+        ],
+        "createdAtMs": 1770368241044,
+        "lastUsedAtMs": 1770953080004
+      },
+      "node": {
+        "token": "8302d4f063274fe0863aa8ae84c03212",
+        "role": "node",
+        "scopes": [],
+        "createdAtMs": 1770720406301,
+        "lastUsedAtMs": 1770726283749
+      }
+    },
+    "createdAtMs": 1770368241044,
+    "approvedAtMs": 1770720406301
+  },
+  "ba0e3826b5a0da0b8c5dedd4a5e9dcb14969c71f1a7161cbe0a8d3e90ded9071": {
+    "deviceId": "ba0e3826b5a0da0b8c5dedd4a5e9dcb14969c71f1a7161cbe0a8d3e90ded9071",
+    "publicKey": "FdU-BpqTJc9NblcKv9K_NApYx7Pnwpe17ZqqstYQqJM",
+    "platform": "Win32",
+    "clientId": "openclaw-control-ui",
+    "clientMode": "webchat",
+    "role": "operator",
+    "roles": [
+      "operator"
+    ],
+    "scopes": [
+      "operator.admin",
+      "operator.approvals",
+      "operator.pairing"
+    ],
+    "tokens": {
+      "operator": {
+        "token": "7a36c8d60fed4726965e097dadbe25a0",
+        "role": "operator",
+        "scopes": [
+          "operator.admin",
+          "operator.approvals",
+          "operator.pairing"
+        ],
+        "createdAtMs": 1770619305758,
+        "lastUsedAtMs": 1770959574405
+      }
+    },
+    "createdAtMs": 1770619305758,
+    "approvedAtMs": 1770619305758
+  },
+  "a204f51b65c6dfea8fb182ce9f3e5059c1db7f703ac274ea900faab92c40183d": {
+    "deviceId": "a204f51b65c6dfea8fb182ce9f3e5059c1db7f703ac274ea900faab92c40183d",
+    "publicKey": "Bf62PWi_eCJ6bSqKzllqFuOC7HOZx-W2neDpMbP1Vc4",
+    "displayName": "syn",
+    "platform": "win32",
+    "clientId": "node-host",
+    "clientMode": "node",
+    "role": "node",
+    "roles": [
+      "node"
+    ],
+    "tokens": {
+      "node": {
+        "token": "91b8d7a811d04afc857ca24a06643906",
+        "role": "node",
+        "scopes": [],
+        "createdAtMs": 1770780621624,
+        "lastUsedAtMs": 1770782401441
+      }
+    },
+    "createdAtMs": 1770780621624,
+    "approvedAtMs": 1770780621624
+  }
+}

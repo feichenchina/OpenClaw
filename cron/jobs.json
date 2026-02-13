@@ -1,0 +1,43 @@
+{
+  "version": 1,
+  "jobs": [
+    {
+      "id": "agent-heartbeat",
+      "name": "Agent Heartbeat",
+      "enabled": false,
+      "schedule": "0 0 * * *",
+      "command": "agent:heartbeat",
+      "args": [],
+      "options": {
+        "timeout": 300
+      },
+      "state": {},
+      "updatedAtMs": 1770791117533
+    },
+    {
+      "id": "c5bd3b35-c16a-4505-958a-9085140e3b78",
+      "agentId": "main",
+      "name": "Daily weather to Feishu (Zhengzhou)",
+      "enabled": true,
+      "createdAtMs": 1770791418259,
+      "updatedAtMs": 1770791700001,
+      "schedule": {
+        "kind": "cron",
+        "expr": "35 14 * * *",
+        "tz": "Asia/Shanghai"
+      },
+      "sessionTarget": "main",
+      "wakeMode": "next-heartbeat",
+      "payload": {
+        "kind": "systemEvent",
+        "text": "Reminder (daily 14:35): fetch current weather for 河南郑州 and send it via Feishu to user zhujingru."
+      },
+      "state": {
+        "nextRunAtMs": 1770878100000,
+        "lastRunAtMs": 1770791700002,
+        "lastStatus": "ok",
+        "lastDurationMs": 5
+      }
+    }
+  ]
+}

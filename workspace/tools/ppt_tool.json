@@ -1,0 +1,15 @@
+{
+  "name": "create_powerpoint",
+  "description": "通过 Windows HTTP 服务生成 PowerPoint 演示文稿",
+  "parameters": {
+    "title": {
+      "type": "string",
+      "description": "PPT 标题"
+    },
+    "content": {
+      "type": "string",
+      "description": "PPT 首页内容"
+    }
+  },
+  "command": "curl -s -X POST http://172.29.112.1:3000/generate-ppt -H 'Content-Type: application/json' -d '{\"title\":\"{{title}}\",\"content\":\"{{content}}\"}' | jq -r '.pptPath // .error'"
+}

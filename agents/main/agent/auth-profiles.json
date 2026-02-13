@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "profiles": {
+    "qwen-portal:default": {
+      "type": "oauth",
+      "provider": "qwen-portal",
+      "access": "495erB2MgAAsX7hMdrOP5FVhMeXf4QUWIGTNxFRCubjT9xrJcL5Rv9F5Z2ezlisPVNnNeOx9409-n8tMhag9yQ",
+      "refresh": "WpkXUZzglzsEd8oxDodN6bFEVdDp_9yKv3dmN2ORXGJF5f92S8jOM5rJfQ1vMUWXl0MAjSHpB86CYWfT6_4uPQ",
+      "expires": 1770734944205
+    },
+    "github-copilot:github": {
+      "type": "token",
+      "provider": "github-copilot",
+      "token": "ghu_NdqdXzv2jsPeEyrIDazzT0GDhdMVd246ZtYk"
+    }
+  },
+  "lastGood": {
+    "qwen-portal": "qwen-portal:default",
+    "github-copilot": "github-copilot:github"
+  },
+  "usageStats": {
+    "qwen-portal:default": {
+      "lastUsed": 1770719413177,
+      "errorCount": 0,
+      "lastFailureAt": 1770719413167
+    },
+    "github-copilot:github": {
+      "lastUsed": 1770875836575,
+      "errorCount": 0
+    }
+  }
+}

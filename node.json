@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "nodeId": "b3cdd7fe-66b0-4cc9-b426-5b4d8ab8ee18",
+  "displayName": "syn",
+  "gateway": {
+    "host": "127.0.0.1",
+    "port": 18789,
+    "tls": false
+  }
+}
