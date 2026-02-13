@@ -220,3 +220,4 @@ marimo/_static/
 marimo/_lsp/
 __marimo__/
 
+agents/main/agent/auth-profiles.json
