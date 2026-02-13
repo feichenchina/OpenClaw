@@ -4949,3 +4949,27 @@
 
 [2026-02-13T06:44:03.593Z] Error email suppressed | curl: (28) Failed to connect to huggingface.co port 443 after 5206 ms: Connection timed out
 
+[2026-02-13T06:46:43.260Z] Fetch attempt 1 failed | curl: (28) Failed to connect to huggingface.co port 443 after 5211 ms: Connection timed out
+
+[2026-02-13T06:46:53.479Z] Fetch attempt 2 failed | curl: (28) Failed to connect to huggingface.co port 443 after 5206 ms: Connection timed out
+
+[2026-02-13T06:47:03.705Z] Fetch attempt 3 failed | curl: (28) Failed to connect to huggingface.co port 443 after 5209 ms: Connection timed out
+
+[2026-02-13T06:47:03.706Z] Error email suppressed | curl: (28) Failed to connect to huggingface.co port 443 after 5209 ms: Connection timed out
+
+[2026-02-13T06:49:43.259Z] Fetch attempt 1 failed | curl: (28) Failed to connect to huggingface.co port 443 after 5207 ms: Connection timed out
+
+[2026-02-13T06:49:53.478Z] Fetch attempt 2 failed | curl: (28) Failed to connect to huggingface.co port 443 after 5207 ms: Connection timed out
+
+[2026-02-13T06:50:03.700Z] Fetch attempt 3 failed | curl: (28) Failed to connect to huggingface.co port 443 after 5207 ms: Connection timed out
+
+[2026-02-13T06:50:03.701Z] Error email suppressed | curl: (28) Failed to connect to huggingface.co port 443 after 5207 ms: Connection timed out
+
+[2026-02-13T06:52:43.352Z] Fetch attempt 1 failed | curl: (28) Failed to connect to huggingface.co port 443 after 5206 ms: Connection timed out
+
+[2026-02-13T06:52:53.572Z] Fetch attempt 2 failed | curl: (28) Failed to connect to huggingface.co port 443 after 5208 ms: Connection timed out
+
+[2026-02-13T06:53:03.789Z] Fetch attempt 3 failed | curl: (28) Failed to connect to huggingface.co port 443 after 5207 ms: Connection timed out
+
+[2026-02-13T06:53:03.789Z] Error email suppressed | curl: (28) Failed to connect to huggingface.co port 443 after 5207 ms: Connection timed out
+
