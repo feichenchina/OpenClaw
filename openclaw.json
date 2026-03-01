@@ -149,6 +149,9 @@
       },
       "feishu": {
         "enabled": true
+      },
+      "vllm-pd-scheduler": {
+        "enabled": false
       }
     },
     "installs": {
@@ -158,6 +161,12 @@
         "installPath": "/home/ubuntu/.openclaw/extensions/feishu",
         "version": "0.1.9",
         "installedAt": "2026-02-10T07:14:05.460Z"
+      },
+      "vllm-pd-scheduler": {
+        "source": "local",
+        "spec": "@openclaw/vllm-pd-scheduler",
+        "installPath": "extensions/vllm-pd-scheduler",
+        "version": "0.1.0"
       }
     }
   }
