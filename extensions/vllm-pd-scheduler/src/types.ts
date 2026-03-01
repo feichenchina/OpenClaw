@@ -113,11 +113,13 @@ export interface InferenceResult {
 /** Describes a KV cache block that must be transferred from P → D worker. */
 export interface KVCacheTransferRequest {
   requestId: string;
-  sourceWorkerId: string;
-  targetWorkerId: string;
+  /** Base URL of the source (prefill) worker's API. */
+  sourceEndpoint: string;
+  /** Base URL of the target (decode) worker's API. */
+  targetEndpoint: string;
   /** Opaque handle identifying the cache on the source worker. */
   cacheHandle: string;
-  /** Size of the cache payload in bytes (for bandwidth estimation). */
+  /** Size of the cache payload in bytes (for future bandwidth estimation). */
   cacheSizeBytes: number;
 }
 

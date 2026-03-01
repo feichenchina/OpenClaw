@@ -102,7 +102,7 @@ export class KVCacheTransferManager {
     try {
       // Step 1: Export cache from source worker.
       const exportRes = await fetch(
-        `${req.sourceWorkerId}/v1/kv_cache/export`,
+        `${req.sourceEndpoint}/v1/kv_cache/export`,
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
@@ -123,13 +123,13 @@ export class KVCacheTransferManager {
 
       // Step 2: Import cache into target worker.
       const importRes = await fetch(
-        `${req.targetWorkerId}/v1/kv_cache/import`,
+        `${req.targetEndpoint}/v1/kv_cache/import`,
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({
             transfer_token: exportBody.transfer_token,
-            source_worker: req.sourceWorkerId,
+            source_worker: req.sourceEndpoint,
           }),
           signal: controller.signal,
         },

@@ -180,7 +180,11 @@ export class VllmClient {
       }
     }
 
-    // Fallback: standard completion (KV cache handle used as context id).
+    // Fallback: standard completion. The `<kv_cache:…>` prefix is a
+    // convention used by some vLLM forks to hint that the prompt should
+    // be resolved from an existing KV cache rather than re-tokenised.
+    // When the backend does not support this, it is treated as a literal
+    // text prompt and the decode quality may degrade.
     const fallbackRes = await this.post(`${worker.endpoint}/v1/completions`, {
       model: modelId,
       prompt: `<kv_cache:${kvCacheHandle}>`,

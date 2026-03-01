@@ -256,12 +256,16 @@ export class PDScheduler {
         timestamp: Date.now(),
       });
 
+      // cacheSizeBytes is 0 here because the actual KV cache size is not
+      // returned by the prefill API.  The transfer manager currently does
+      // not use this value for scheduling decisions – it is reserved for
+      // future bandwidth-aware transfer prioritisation.
       const transferResult = await this.kvManager.transfer({
         requestId: rid,
-        sourceWorkerId: prefillWorker.endpoint,
-        targetWorkerId: decodeWorker.endpoint,
+        sourceEndpoint: prefillWorker.endpoint,
+        targetEndpoint: decodeWorker.endpoint,
         cacheHandle: prefillResult.kvCacheHandle,
-        cacheSizeBytes: 0, // unknown until runtime
+        cacheSizeBytes: 0,
       });
 
       if (!transferResult.success) {
