@@ -1,0 +1,38 @@
+{
+  "name": "@openclaw/vllm-pd-scheduler",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "OpenClaw plugin for vLLM PD (Prefill-Decode) dynamic task scheduling",
+  "license": "MIT",
+  "files": [
+    "index.ts",
+    "src",
+    "openclaw.plugin.json"
+  ],
+  "keywords": [
+    "openclaw",
+    "vllm",
+    "prefill",
+    "decode",
+    "pd-disaggregation",
+    "inference",
+    "scheduler",
+    "llm"
+  ],
+  "openclaw": {
+    "extensions": [
+      "./index.ts"
+    ]
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.7.0",
+    "tsx": "^4.21.0",
+    "vitest": "^3.0.5"
+  },
+  "scripts": {
+    "build": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  }
+}

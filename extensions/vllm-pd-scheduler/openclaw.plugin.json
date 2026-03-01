@@ -1,0 +1,69 @@
+{
+  "id": "vllm-pd-scheduler",
+  "skills": [],
+  "configSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "enabled": {
+        "type": "boolean",
+        "description": "Whether the PD scheduler is active"
+      },
+      "strategy": {
+        "type": "string",
+        "enum": ["round-robin", "least-loaded", "latency-aware"],
+        "description": "Scheduling strategy for assigning requests to workers"
+      },
+      "healthCheckIntervalMs": {
+        "type": "integer",
+        "minimum": 1000,
+        "description": "Interval (ms) between health-check probes"
+      },
+      "workerTimeoutMs": {
+        "type": "integer",
+        "minimum": 5000,
+        "description": "How long (ms) before an unresponsive worker is marked offline"
+      },
+      "maxQueueSize": {
+        "type": "integer",
+        "minimum": 1,
+        "description": "Max requests waiting in the scheduler queue"
+      },
+      "defaultRequestTimeoutMs": {
+        "type": "integer",
+        "minimum": 1000,
+        "description": "Default per-request timeout (ms)"
+      },
+      "workers": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "id": { "type": "string" },
+            "endpoint": { "type": "string", "format": "uri" },
+            "role": { "type": "string", "enum": ["prefill", "decode"] },
+            "modelId": { "type": "string" },
+            "maxConcurrency": { "type": "integer", "minimum": 1 }
+          },
+          "required": ["id", "endpoint", "role", "modelId"]
+        },
+        "description": "Initial set of workers to register at startup"
+      },
+      "kvTransfer": {
+        "type": "object",
+        "properties": {
+          "maxConcurrent": {
+            "type": "integer",
+            "minimum": 1,
+            "description": "Maximum concurrent KV cache transfers"
+          },
+          "timeoutMs": {
+            "type": "integer",
+            "minimum": 1000,
+            "description": "Transfer timeout (ms)"
+          }
+        }
+      }
+    }
+  }
+}
