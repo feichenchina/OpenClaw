@@ -1,0 +1,44 @@
+{
+  "strategy": "least_load",
+  "health_check_interval": 5.0,
+  "health_check_timeout": 2.0,
+  "max_retries": 3,
+  "drain_timeout": 30.0,
+  "load_weight": 0.5,
+  "kv_cache_weight": 0.3,
+  "latency_weight": 0.2,
+  "prefill_instances": [
+    {
+      "id": "prefill-0",
+      "host": "10.0.0.1",
+      "port": 8000,
+      "weight": 1.0
+    },
+    {
+      "id": "prefill-1",
+      "host": "10.0.0.2",
+      "port": 8000,
+      "weight": 1.0
+    }
+  ],
+  "decode_instances": [
+    {
+      "id": "decode-0",
+      "host": "10.0.0.3",
+      "port": 8000,
+      "weight": 1.0
+    },
+    {
+      "id": "decode-1",
+      "host": "10.0.0.4",
+      "port": 8000,
+      "weight": 1.0
+    },
+    {
+      "id": "decode-2",
+      "host": "10.0.0.5",
+      "port": 8000,
+      "weight": 1.0
+    }
+  ]
+}
